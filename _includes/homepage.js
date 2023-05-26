@@ -69,6 +69,46 @@ function getOffset(element) {
   return [item.top + window.pageYOffset - document.documentElement.clientTop, item.left + window.pageXOffset - document.documentElement.clientLeft];
 }
 
+
+
+var $ = jQuery,
+activityFeed = $('#activityFeed'),
+activityList = $('#activityList'),
+// refreshAction = $('#refresh-feed'),
+toggleAction = $('#toggle-feed'),
+toggleText = $('#toggle-text'),
+toggleText2 = $('#toggle-text2'),
+resumeIcon = $('#resume-icon'),
+pauseIcon = $('#pause-icon'),
+source = $("#activity-template").html(),
+template = Handlebars.compile(source);
+
+var octicons = {};
+
+var futureContinuation = null;
+var backwardContinuation = null;
+
+var rendering = null;
+var alive = false;
+var queuedActivity = [];
+var visibleActivity = [];
+var pinnedActivity = [];
+var visibleIds = {};
+
+var refreshInterval = 7500;
+var displayInterval = 1500;
+
+var refreshTimer = null;
+
+var initialDisplay = 5;
+var maximumVisible = 8;
+
+function refresh(isAutomatic) {
+iteration(isAutomatic);
+return false;
+}
+
+
 function getSize(element) {
   var item = element.getBoundingClientRect();
   return [item.height, item.width];
