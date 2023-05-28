@@ -51,9 +51,9 @@
         resumeIcon.show();
         pauseIcon.hide();
         alive = false;
-        if (refreshTimer) {
+        if (refreshTimer) { 
             clearInterval(refreshTimer);
-            refreshTimer = null;
+            refreshTimer = null; //null
         }
         return false;
     }
