@@ -17,7 +17,7 @@ and improve program and ecosystem pages.
 We do not currently have plans to add drastically different sections to the site or to be the "source of truth" 
 for blog posts or other content. We're able to accept some coordinated contributions or suggestions, but request
 coordination in issues before embarking on new functionality, as the site has a set of requirements to meet such
-as being WCAG 2.1 accessible, and deploying to Microsoft's cloud.
+as being WCAG 2.1 accessible, and deploying to Microsoft's cloud. 
 
 The primary site navigation is:
  
