@@ -20,7 +20,7 @@ coordination in issues before embarking on new functionality, as the site has a 
 as being WCAG 2.1 accessible, and deploying to Microsoft's cloud.
 
 The primary site navigation is:
-
+ 
 - Homepage overview
 - Get involved
 - Projects
