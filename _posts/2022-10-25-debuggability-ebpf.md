@@ -11,3 +11,4 @@ excerpt:
 ---
 The eBPF for Windows runtime has introduced a new mode of operation, native code generation, which exists alongside the currently supported modes of operation for eBPF programs: JIT (just-in-time compilation) and an interpreter, with the administrator able to select the mode when a program is loaded. 
  
+ 
